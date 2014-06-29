@@ -1,0 +1,27 @@
+<h2>{{=it.tittel}}</h2>
+
+<table>
+    <tr>
+        <th>Navn</th>
+        <th>Praksisadr</th>
+        <th>Postadresse</th>
+        <th>Poststed</th>
+        <th>Tlf. praksis</th>
+        <th>Avtale</th>
+        <th>Kommentar</th>
+    </tr>
+
+    <!-- for loop -->
+
+    {{~it.personer : person}}
+    <tr>
+        <td>{{=person.name}}</td>
+        <td>{{=person.workAdress}}</td>
+        <td>{{=person.mailAdress}}</td>
+        <td>{{=person.mailPostal}}</td>
+        <td>{{=person.phone}}</td>
+        <td>{{=person.time}}</td>
+        <td>{{=person.comment}}</td>
+    </tr>
+    {{~}}
+</table>
